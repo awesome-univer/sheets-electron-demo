@@ -1,0 +1,48 @@
+{
+  "name": "electron-demo",
+  "productName": "electron-demo",
+  "version": "1.0.0",
+  "description": "My Electron application description",
+  "main": ".vite/build/main.js",
+  "scripts": {
+    "start": "ELECTRON_MIRROR=\"https://npmmirror.com/mirrors/electron/\" electron-forge start",
+    "package": "ELECTRON_MIRROR=\"https://npmmirror.com/mirrors/electron/\" electron-forge package",
+    "make": "ELECTRON_MIRROR=\"https://npmmirror.com/mirrors/electron/\" electron-forge make",
+    "publish": "ELECTRON_MIRROR=\"https://npmmirror.com/mirrors/electron/\" electron-forge publish",
+    "lint": "eslint --ext .ts,.tsx ."
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.6.0",
+    "@electron-forge/maker-deb": "^7.6.0",
+    "@electron-forge/maker-rpm": "^7.6.0",
+    "@electron-forge/maker-squirrel": "^7.6.0",
+    "@electron-forge/maker-zip": "^7.6.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.6.0",
+    "@electron-forge/plugin-fuses": "^7.6.0",
+    "@electron-forge/plugin-vite": "^7.6.0",
+    "@electron/fuses": "^1.8.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@typescript-eslint/eslint-plugin": "^8.16.0",
+    "@typescript-eslint/parser": "^8.16.0",
+    "electron": "^33.2.1",
+    "esbuild-register": "^3.6.0",
+    "eslint": "^9.0.1",
+    "eslint-plugin-import": "^2.31.0",
+    "typescript": "^5.7.2",
+    "vite": "^4.5.5"
+  },
+  "keywords": [],
+  "author": {
+    "name": "zsq1234",
+    "email": "2387311298@qq.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@univerjs/presets": "^0.5.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "electron-squirrel-startup": "^1.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
